@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Script -->
+     <script src="./script.js" defer></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div style="height: 600px;" class="container">
+        <h2>Registration Form</h2>
+        <form id="registration">
+            <div class="name">Name
+                <input class="nameInt" type="text" placeholder="Enter Your Name">
+                <p class="nameError">Name cannot be empty</p>
+            </div>
+            <div class="email">E-mail 
+                <input class="emailInt" type="email" placeholder="Enter Your Email">
+                <p class="emailError">Enter a valid email address</p>
+            </div>
+            <div class="passWord">Password
+                <input class="passInt" type="password" placeholder="Enter Your Password">
+                <p class="passError">Password has minimum 6 characters</p>
+                <div class="rating" ></div>
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+                <input class="btn2" type="reset">
+            </div>
+            
+
+        </form>
+    </div>
+
+    
+    <div id="confetti"></div>
+</body>
+
+</html>

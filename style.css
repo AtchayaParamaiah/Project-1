@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D070ED;
+    height: 500px;
+    position: relative;
+}
+
+.container h2 {
+    color: white;
+    position: absolute;
+    top: 100px;
+}
+
+.container form {
+    position: fixed;
+    background-color: #cc92dd;
+    padding: 30px;
+    height: 200px;
+}
+
+.name,
+.email,
+.passWord,
+.submit {
+    height: 30%;
+}
+
+.nameError,
+.emailError,
+.passError {
+    color: red;
+    display: none;
+}
+
+.btn {
+    padding: 8px;
+    background-color: #4BA849;
+
+
+}
+
+.btn2 {
+    margin-left: 2px;
+    padding: 8px;
+    background-color: red;
+}
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.8;
+    animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(600px) rotate(360deg);
+    }
+}
